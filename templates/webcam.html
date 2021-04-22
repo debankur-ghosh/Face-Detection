@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Webcam </title>
+    <style>
+      body{
+        background-color: rgb(243, 245, 233);
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <p style="font-family: Arial, Helvetica, sans-serif; color: rgba(8, 64, 167, 0.842); font-size: 25px;">webcam streaming</p>
+    <img src="{{ url_for('video_feed') }}"></center>
+  </body>
+</html>

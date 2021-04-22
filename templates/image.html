@@ -1,0 +1,17 @@
+<html>
+  <title>Image</title>
+  <style>
+    body{
+        background-color: rgb(243, 245, 233);
+      }
+  </style>
+   <body><center>
+      <form action = "/upload" method = "POST" enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+      
+      <p style="font-family: Arial, Helvetica, sans-serif; color: rgba(8, 64, 167, 0.842); font-size: 25px;">Uploaded Image</p>
+      <img src="{{ url_for('image_feed') }}"></center>
+   </body>
+</html>
