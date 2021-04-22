@@ -11,16 +11,19 @@ use pip3 instead of pip if you have pip version 3
 
 **Run the program**
 1. git clone https://github.com/debankur-ghosh/Face-Detection.git
-2. FLASK_APP=app.py
-3. flask run
+2. cd Face-Detection
+3. FLASK_APP=app.py
+4. flask run
 ---
 ## Follow the bellow steps if you're using anaconda
 1. conda create --name flsk python=3.6 -y
 2. conda activate flsk
-3. pip install flask
-4. pip install opencv-python
-5. FLASK_APP=app.py
-6. flask run
+3. git clone https://github.com/debankur-ghosh/Face-Detection.git
+4. cd Face-Detection
+5. pip install flask
+6. pip install opencv-python
+7. FLASK_APP=app.py
+8. flask run
 
 
 # result 
