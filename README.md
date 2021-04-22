@@ -10,7 +10,7 @@ install pip if not already installed
 use pip3 instead of pip if you have pip version 3
 
 **Run the program**
-1. git clone https://github.com/debankur-ghosh/Face-Detectionhttps://github.com/debankur-ghosh/Face-Detection.git
+1. git clone https://github.com/debankur-ghosh/Face-Detection.git
 2. FLASK_APP=app.py
 3. flask run
 ---
