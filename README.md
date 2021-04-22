@@ -29,14 +29,20 @@ use pip3 instead of pip if you have pip version 3
 # result 
 
 **index page** 
+
 ![alt text](index.png)
 
 
 **using webcam**
+
 ![alt text](webcam.png)
 
 
 **using photo**
+1. click `Browse`
+2. select the photo from local directory
+3. click `Submit Query` to obtain result
+
 ![alt text](image.png)
 
 
