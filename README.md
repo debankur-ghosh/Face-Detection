@@ -25,15 +25,15 @@ use pip3 instead of pip if you have pip version 3
 
 # result 
 
-index page 
+**index page** 
 ![alt text](index.png)
 
 
-using webcam
+**using webcam**
 ![alt text](webcam.png)
 
 
-using photo
+**using photo**
 ![alt text](image.png)
 
 
