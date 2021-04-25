@@ -1,4 +1,4 @@
-# Face-Detection
+# Face-Detection and Heart Rate Monitoring
 ## Steps to run the program
 **install dependencies**
 This program requires python 3.6 to run
