@@ -6,6 +6,7 @@ install pip if not already installed
 
 1. pip install flask
 2. pip install opencv-python
+3. pip install sklearn
 
 use pip3 instead of pip if you have pip version 3
 
@@ -22,8 +23,9 @@ use pip3 instead of pip if you have pip version 3
 4. cd Face-Detection
 5. pip install flask
 6. pip install opencv-python
-7. FLASK_APP=app.py
-8. flask run
+7. pip install sklearn
+8. FLASK_APP=app.py
+9. flask run
 
 
 # result 
@@ -44,6 +46,11 @@ use pip3 instead of pip if you have pip version 3
 3. click `Submit Query` to obtain result
 
 ![alt text](image.png)
+
+**Heart Rate Monitoring**
+1. Place your finger on the camera and hold a source of LED light close to your finger nail
+
+![alt text](hr.png)
 
 
 
