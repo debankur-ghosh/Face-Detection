@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Heart Rate</title>
+    <style>
+      body{
+        background-color: rgb(243, 245, 233);
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <p style="font-family: Arial, Helvetica, sans-serif; color: rgba(8, 64, 167, 0.842); font-size: 25px;">Heart Rate Monitoring</p>
+    <p style="font-family: Arial, Helvetica, sans-serif; color: rgba(8, 64, 167, 0.842); font-size: 16px;">Place your finger on the camera and place a source of LED light behind your finger</p>
+    <img src="{{ url_for('hr_feed') }}">
+
+    {{prediction_text}}
+
+    </center>
+
+
+  </body>
+</html>
