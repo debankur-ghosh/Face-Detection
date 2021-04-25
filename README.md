@@ -11,7 +11,7 @@ install pip if not already installed
 use pip3 instead of pip if you have pip version 3
 
 **Run the program**
-1. git clone https://github.com/debankur-ghosh/Face-Detection.git
+1. git clone https://github.com/debankur-ghosh/Face-Detection-and-Heart-Rate-Monitoring.git
 2. cd Face-Detection
 3. FLASK_APP=app.py
 4. flask run
@@ -19,8 +19,8 @@ use pip3 instead of pip if you have pip version 3
 ## Follow the bellow steps if you're using anaconda
 1. conda create --name flsk python=3.6 -y
 2. conda activate flsk
-3. git clone https://github.com/debankur-ghosh/Face-Detection.git
-4. cd Face-Detection
+3. git clone https://github.com/debankur-ghosh/Face-Detection-and-Heart-Rate-Monitoring.git
+4. cd Face-Detection-and-Heart-Rate-Monitoring
 5. pip install flask
 6. pip install opencv-python
 7. pip install sklearn
