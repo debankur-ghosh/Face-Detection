@@ -5,35 +5,35 @@ import pickle
 import numpy as np
 
 
-app= Flask(__name__)
+app1= Flask(__name__)
 sub = cv2.createBackgroundSubtractorMOG2() 
 #creates an instance directory for uploading files (/instance/upload)
-os.makedirs(os.path.join(app.instance_path, 'upload'), exist_ok=True)
+os.makedirs(os.path.join(app1.instance_path, 'upload'), exist_ok=True)
 
-@app.route('/') 
+@app1.route('/') 
 def index():
     
     return render_template('index.html')
 
-@app.route('/webcam')
+@app1.route('/webcam')
 def webcam():
     return render_template('webcam.html')
 
 
-@app.route('/image') 
+@app1.route('/image') 
 def image_page():
     return render_template('image.html')
 
-@app.route('/upload', methods=('GET','POST'))
+@app1.route('/upload', methods=('GET','POST'))
 def upload():
     if request.method == 'POST':
         f = request.files['file']
-        f.save(os.path.join(app.instance_path, 'upload', 'file1'))
+        f.save(os.path.join(app1.instance_path, 'upload', 'file1'))
         gen2()
     
     return redirect('/image')
 
-@app.route('/hr')
+@app1.route('/hr')
 def hr():
     return render_template('hr.html')
 
@@ -141,17 +141,17 @@ def gen3():
 
         
 
-@app.route('/video_feed') #sending video feed
+@app1.route('/video_feed') #sending video feed
 def video_feed():
     return Response(gen(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/image_feed') #sending image feed
+@app1.route('/image_feed') #sending image feed
 def image_feed():    
     return Response(gen2(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
-@app.route('/hr_feed') #sending video feed
+@app1.route('/hr_feed') #sending video feed
 def hr_feed():
     return Response(gen3(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
@@ -159,5 +159,5 @@ def hr_feed():
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
-    app.run(debug=True)
+    app1.run(debug=True)
 
