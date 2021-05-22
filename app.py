@@ -5,7 +5,7 @@ import pickle
 import numpy as np
 
 
-app1 = Flask(__name__)
+app= Flask(__name__)
 sub = cv2.createBackgroundSubtractorMOG2() 
 #creates an instance directory for uploading files (/instance/upload)
 os.makedirs(os.path.join(app.instance_path, 'upload'), exist_ok=True)
